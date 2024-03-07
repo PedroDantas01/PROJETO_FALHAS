@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pai">
+      <div id="gerar_falha">
+        <div id="tipo_rede">
+          <label for="ftth">FTTH</label>
+          <input type="radio" name="tiporede" id="ftth" />
+          <label for="fttx">FTTX</label>
+          <input type="radio" name="tiporede" id="fttx" />
+        </div>
+
+        <div id="bairro_rua">
+          <input
+            type="text"
+            id="cidade_falha"
+            placeholder="CIDADE"
+            autocomplete="off"
+          />
+
+          <input
+            type="text"
+            id="bairro_falha"
+            placeholder="BAIRRO"
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="slot_pon_media">
+          <input
+            type="text"
+            id="slot_pon_falha"
+            placeholder="SLOT E PON"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="media_cliente"
+            placeholder="MEDIA CLIENTE OFF"
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="rua_id_falha">
+          <input
+            type="text"
+            id="rua_falha"
+            placeholder="RUA"
+            autocomplete="off"
+          />
+
+          <input
+            type="text"
+            id="id_falha"
+            placeholder="ID FALHA"
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="prazo_e_inicio">
+          <input
+            type="text"
+            id="prazo_falha"
+            placeholder="PRAZO"
+            autocomplete="off"
+          />
+
+          <input
+            type="text"
+            id="inicio_falha"
+            placeholder="INCIO FALHA"
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="btn_gerar_falha">
+          <button onclick="teste()">GERAR</button>
+        </div>
+      </div>
+    </div>
+    <div id="msg_falha_platao">
+      <div id="msg_falha">
+        <p id="texo_falha"></p>
+      </div>
+
+      <div id="msg_platao">
+        <p id="texo_platao"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

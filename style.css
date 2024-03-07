@@ -1,0 +1,98 @@
+body {
+  background-color: gray;
+}
+#pai {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+input {
+  text-align: center;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#tipo_rede{
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 10px 0;
+}
+
+#bairro_rua {
+  margin-top: 5px;
+}
+
+#slot_pon_media {
+  
+  margin-top: 5px;
+  
+}
+
+#rua_id_falha {
+  margin-top: 5px;
+}
+
+#prazo_e_inicio {
+  margin-top: 5px;
+}
+
+#btn_gerar_falha {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+#btn_gerar_falha button{ 
+  border: 0;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+}
+#msg_falha_platao{
+  display: flex;
+  justify-content: center;
+  border: 1px solid #217ba5;
+  margin-top: 10px;
+ 
+}
+#msg_falha {
+  max-width: 500px;
+ 
+  word-wrap: break-word;
+  margin: 10px;
+ 
+}
+#msg_platao {
+  max-width: 500px;
+ 
+  word-wrap: break-word;
+  margin: 10px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  #bairro_rua {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  #slot_pon_media {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+  #rua_id_falha {
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+  }
+  #prazo_e_inicio {
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+   
+  }
+  input{
+    margin-top: 5px;
+  }
+}
