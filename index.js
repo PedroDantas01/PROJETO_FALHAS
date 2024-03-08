@@ -15,7 +15,10 @@ const inicioFalha = document.getElementById('inicio_falha').value
 const alertafalha = document.getElementById('texo_falha')
 const msgplantao = document.getElementById('texo_platao')
 
-
+if(!cidadeFalha || !bairroFalha || !slotPonFalha || !mediaOff || !ruaFalha || !ruaFalha || !idFalha || !prazoFalha || !inicioFalha){
+  alertafalha.innerHTML=`Selecione o tipo de rede e preencha os campos`
+return ;
+}
 if(redeftth){
 
 alertafalha.innerHTML=`FALHA DE REDE LOCAL - ${bairroFalha} - ${slotPonFalha} </br></br>

@@ -82,6 +82,7 @@ input {
 @media screen and (max-width: 800px) {
   #msg_falha_platao {
     display: flex;
+    align-items: center;
     flex-flow: column;
   }
 }
