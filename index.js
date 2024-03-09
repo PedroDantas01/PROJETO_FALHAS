@@ -21,7 +21,9 @@ return ;
 }
 if(redeftth){
 
-alertafalha.innerHTML=`FALHA DE REDE LOCAL - ${bairroFalha} - ${slotPonFalha} </br></br>
+alertafalha.innerHTML=`<h2>ALERTA FALHA</h2></br></br>
+
+FALHA DE REDE LOCAL - ${bairroFalha} - ${slotPonFalha} </br></br>
 ID ${idFalha} </br></br>
 CLIENTES QUE RESIDEM  EM ${bairroFalha} E SE CONECTAM AO ${slotPonFalha}, IRÃO SENTIR FALTA DE ACESSO DEVIDO À UM ROMPIMENTO DE FIBRA QUE ATENDE A LOCALIDADE.
 NOSSA EQUIPE JÁ ESTÁ CIENTE E FAZENDO O POSSÍVEL PARA NORMALIZAR O QUANTO ANTES. </br></br>
@@ -29,7 +31,9 @@ PRAZO PARA NORMALIZAÇÃO: ${prazoFalha} </br></br>
 INÍCIO DA FALHA: ${inicioFalha}`
 
 
-msgplantao.innerHTML=`IDENTIFICADOS CLIENTES SEM ACESSO  ${bairroFalha} - ${slotPonFalha}</br></br>
+msgplantao.innerHTML=`<h2>MENSAGEM PLANTÃO</h2></br></br>
+
+IDENTIFICADOS CLIENTES SEM ACESSO  ${bairroFalha} - ${slotPonFalha}</br></br>
 RUA(S) ${ruaFalha}</br></br>
 MEDIA DE ${mediaOff} CLIENTES </br></br>
 PRAZO INFORMADO ATE ${prazoFalha}`
@@ -37,7 +41,9 @@ PRAZO INFORMADO ATE ${prazoFalha}`
 
 }else if(redefttx){
 
-  alertafalha.innerHTML=`FALHA DE REDE LOCAL - ${bairroFalha} - ${ruaFalha} </br></br>
+  alertafalha.innerHTML=`<h2>ALERTA FALHA</h2></br></br>
+  
+  FALHA DE REDE LOCAL - ${bairroFalha} - ${ruaFalha} </br></br>
   ID ${idFalha} </br></br>
   CLIENTES QUE RESIDEM  EM ${bairroFalha}, RUA(S) ${ruaFalha}, IRÃO SENTIR FALTA DE ACESSO DEVIDO À UMA FALHA NO EQUIPAMENTO DA LOCALIDADE.
   NOSSA EQUIPE JÁ ESTÁ CIENTE E FAZENDO O POSSÍVEL PARA NORMALIZAR O QUANTO ANTES. </br></br>
@@ -45,7 +51,9 @@ PRAZO INFORMADO ATE ${prazoFalha}`
   INÍCIO DA FALHA: ${inicioFalha}`
   
   
-  msgplantao.innerHTML=`IDENTIFICADOS CLIENTES SEM ACESSO  ${bairroFalha}</br></br>
+  msgplantao.innerHTML=`<h2>MENSAGEM PLANTÃO</h2></br></br>
+  
+  IDENTIFICADOS CLIENTES SEM ACESSO  ${bairroFalha}</br></br>
   RUA(S) ${ruaFalha}</br></br>
   MEDIA DE ${mediaOff} CLIENTES </br></br>
   PRAZO INFORMADO ATE ${prazoFalha}`
