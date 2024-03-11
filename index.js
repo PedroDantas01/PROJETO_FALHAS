@@ -1,7 +1,9 @@
-function teste(){
+function gerarFalha(){
   
- const redeftth = document.getElementById('ftth').checked
-const redefttx = document.getElementById('fttx').checked
+
+//verifica se o input type radio esta selecionado
+ const redeFTTH = document.getElementById('ftth').checked
+const redeFTTX = document.getElementById('fttx').checked
 
 const cidadeFalha = document.getElementById('cidade_falha').value
 const bairroFalha = document.getElementById('bairro_falha').value
@@ -15,11 +17,15 @@ const inicioFalha = document.getElementById('inicio_falha').value
 const alertafalha = document.getElementById('texo_falha')
 const msgplantao = document.getElementById('texo_platao')
 
-if(!cidadeFalha || !bairroFalha || !slotPonFalha || !mediaOff || !ruaFalha || !ruaFalha || !idFalha || !prazoFalha || !inicioFalha){
+
+//validação de entrada de dados 
+if(!cidadeFalha || !bairroFalha || !slotPonFalha || !mediaOff || !ruaFalha || !idFalha || !prazoFalha || !inicioFalha){
   alertafalha.innerHTML=`Selecione o tipo de rede e preencha os campos`
 return ;
 }
-if(redeftth){
+
+//se FTTH
+if(redeFTTH){
 
 alertafalha.innerHTML=`<h2>ALERTA FALHA</h2></br></br>
 
@@ -39,7 +45,9 @@ MEDIA DE ${mediaOff} CLIENTES </br></br>
 PRAZO INFORMADO ATE ${prazoFalha}`
 
 
-}else if(redefttx){
+}
+//se FFTX
+else if(redeFTTX){
 
   alertafalha.innerHTML=`<h2>ALERTA FALHA</h2></br></br>
   
@@ -58,7 +66,9 @@ PRAZO INFORMADO ATE ${prazoFalha}`
   MEDIA DE ${mediaOff} CLIENTES </br></br>
   PRAZO INFORMADO ATE ${prazoFalha}`
 
-}else{
+}
+//se nenhum for selecionado
+else{
 
   alertafalha.innerHTML=`SELECIONE FTTH OU FTTX`
  

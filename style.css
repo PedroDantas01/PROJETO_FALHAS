@@ -1,5 +1,6 @@
 body {
-  background-color: gray;
+  background-color: rgb(36, 116, 141);
+  color: white;
 }
 #pai {
   display: flex;
